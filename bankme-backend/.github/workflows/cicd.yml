@@ -3,10 +3,10 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main
+      - cicd-pipieline
   pull_request:
     branches:
-      - main
+      - cicd-pipielne
 
 jobs:
   build:
