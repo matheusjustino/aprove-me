@@ -84,4 +84,4 @@ jobs:
         sed -i 's|image: .*$|image: '${{ secrets.DOCKER_USERNAME }}/bankme:${{ env.COMMIT_HASH }}'|' k8s/api/deployment.yml
 
     - name: Apply API Deployment
-      run: kubectl apply -f k8s/api/deployment.yml
+      run: kubectl apply -f bankme-backend/k8s/api/deployment.yml
